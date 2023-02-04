@@ -5,26 +5,26 @@ CREATE SCHEMA hw4;
 The Superhero tables
 */
 
-CREATE TABLE hw4.alignment (
+CREATE TABLE hw4.alignments (
   id serial,
   alignment varchar(10)
 );
-INSERT INTO hw4.alignment VALUES (1,'Good'),(2,'Bad'),(3,'Neutral'),(4,'N/A');
+INSERT INTO hw4.alignments VALUES (1,'Good'),(2,'Bad'),(3,'Neutral'),(4,'N/A');
 
 
-CREATE TABLE hw4.attribute (
+CREATE TABLE hw4.attributes (
   id serial,
   attribute_name varchar(200)
 );
-INSERT INTO hw4.attribute VALUES 
+INSERT INTO hw4.attributes VALUES 
 (1,'Intelligence'),(2,'Strength'),(3,'Speed'),(4,'Durability'),(5,'Power'),(6,'Combat');
 
 
-CREATE TABLE hw4.color (
+CREATE TABLE hw4.colors (
   id serial,
   color varchar(20)
 );
-INSERT INTO hw4.color VALUES 
+INSERT INTO hw4.colors VALUES 
 (1,'No Colour'), (2,'Amber'), (3,'Auburn'), (4,'Black'), (5,'Black/Blue'),
 (6,'Blond'), (7,'Blue'), (8,'Blue/White'), (9,'Brown'), (10,'Brown/Black'),
 (11,'Brown/White'), (12,'Gold'), (13,'Grey'), (14,'Green'), (15,'Green/Blue'),
@@ -34,18 +34,18 @@ INSERT INTO hw4.color VALUES
 (31,'White'), (32,'White/Red'), (33,'Yellow'), (34,'Yellow/Blue'), (35,'Yellow/Red');
 
 
-CREATE TABLE hw4.gender (
+CREATE TABLE hw4.sexes (
   id serial,
-  gender varchar(20)
+  sex varchar(20)
 );
-INSERT INTO hw4.gender VALUES (1,'Male'),(2,'Female'),(3,'N/A');
+INSERT INTO hw4.sexes VALUES (1,'Male'),(2,'Female'),(3,'N/A');
 
 
-CREATE TABLE hw4.publisher (
+CREATE TABLE hw4.publishers (
   id serial,
   publisher_name varchar(50)
 );
-INSERT INTO hw4.publisher VALUES 
+INSERT INTO hw4.publishers VALUES 
 (1,''), (2,'ABC Studios'), (3,'Dark Horse Comics'), (4,'DC Comics'), (5,'George Lucas'),
 (6,'Hanna-Barbera'), (7,'HarperCollins'), (8,'Icon Comics'), (9,'IDW Publishing'), (10,'Image Comics'),
 (11,'J. K. Rowling'), (12,'J. R. R. Tolkien'), (13,'Marvel Comics'), (14,'Microsoft'), (15,'NBC - Heroes'),
@@ -53,11 +53,11 @@ INSERT INTO hw4.publisher VALUES
 (21,'SyFy'), (22,'Team Epic TV'), (23,'Titan Books'), (24,'Universal Studios'), (25,'Wildstorm');
 
 
-CREATE TABLE hw4.race (
+CREATE TABLE hw4.races (
   id serial,
   race varchar(100)
 );
-INSERT INTO hw4.race VALUES 
+INSERT INTO hw4.races VALUES 
 (1,'-'), (2,'Alien'), (3,'Alpha'), (4,'Amazon'), (5,'Android'), (6,'Animal'), (7,'Asgardian'), (8,'Atlantean'), (9,'Bizarro'),
 (10,'Bolovaxian'), (11,'Clone'), (12,'Cosmic Entity'), (13,'Cyborg'), (14,'Czarnian'), (15,'Dathomirian Zabrak'), (16,'Demi-God'), (17,'Demon'), (18,'Eternal'),
 (19,'Flora Colossus'), (20,'Frost Giant'), (21,'God / Eternal'), (22,'Gorilla'), (23,'Gungan'), (24,'Human'), (25,'Human / Altered'), (26,'Human / Clone'), (27,'Human / Cosmic'),
@@ -67,7 +67,7 @@ INSERT INTO hw4.race VALUES
 (55,'Ungaran'), (56,'Vampire'), (57,'Xenomorph XX121'), (58,'Yautja'), (59,'Yodas species'), (60,'Zen-Whoberian'), (61,'Zombie');
 
 
-CREATE TABLE hw4.superhero (
+CREATE TABLE hw4.superheros (
   id serial,
   superhero_name varchar(200),
   full_name varchar(200),
@@ -81,7 +81,7 @@ CREATE TABLE hw4.superhero (
   height_cm int,
   weight_kg int
 );
-INSERT INTO hw4.superhero VALUES 
+INSERT INTO hw4.superheros VALUES 
 (1,'3-D Man','Charles Chandler',1,9,13,1,1,13,1,188,90),
 (2,'A-Bomb','Richard Milhouse Jones',1,33,1,1,24,13,1,203,441),
 (3,'Abe Sapien','Abraham Sapien',1,7,1,7,33,3,1,191,65),
@@ -834,12 +834,12 @@ INSERT INTO hw4.superhero VALUES
 (756,'Zoom','Hunter Zolomon',1,23,9,1,1,4,2,185,81);
 
 
-CREATE TABLE hw4.hero_attribute (
+CREATE TABLE hw4.hero_attributes (
   hero_id int,
   attribute_id int,
   attribute_value int
 );
-INSERT INTO hw4.hero_attribute VALUES 
+INSERT INTO hw4.hero_attributes VALUES 
 (1,1,80), (2,1,75), (3,1,95), (4,1,80), (5,1,85), (6,1,100),
 (8,1,85), (9,1,85), (10,1,80), (11,1,60), (12,1,90), (13,1,80),
 (16,1,80), (17,1,55), (18,1,85), (19,1,80), (21,1,85), (22,1,35),
@@ -1465,11 +1465,11 @@ INSERT INTO hw4.hero_attribute VALUES
 (748,6,45), (749,6,55), (752,6,35), (753,6,30), (754,6,35), (756,6,100);
 
 
-CREATE TABLE hw4.superpower (
+CREATE TABLE hw4.superpowers (
   id serial,
   power_name varchar(200)
 );
-INSERT INTO hw4.superpower VALUES 
+INSERT INTO hw4.superpowers VALUES 
 (1,'Agility'), (2,'Accelerated Healing'),
 (3,'Lantern Power Ring'), (4,'Dimensional Awareness'),
 (5,'Cold Resistance'), (6,'Durability'),
@@ -1556,11 +1556,11 @@ INSERT INTO hw4.superpower VALUES
 (167,'Omniscient');
 
 
-CREATE TABLE hw4.hero_power (
+CREATE TABLE hw4.hero_powers (
   hero_id int,
   power_id int
 );
-INSERT INTO hw4.hero_power VALUES 
+INSERT INTO hw4.hero_powers VALUES 
 (1,1), (1,18), (1,26), (1,31), (2,2), (2,6), (2,16), (2,18), (2,26), (2,51),
 (2,64), (3,1), (3,2), (3,5), (3,6), (3,11), (3,12), (3,13), (3,16), (3,17),
 (3,18), (3,20), (3,26), (3,50), (3,60), (3,88), (3,136), (4,3), (5,2), (5,17),
@@ -2159,7 +2159,7 @@ CREATE TABLE hw4.family_tree (
   yr_birth INT,
   yr_death INT,
   yr_married INT,
-  gender CHAR(1)
+  sex CHAR(1)
 );
 INSERT INTO hw4.family_tree VALUES
 (0,'Donnell',NULL,NULL,NULL,1800,1862,1829,'M'),

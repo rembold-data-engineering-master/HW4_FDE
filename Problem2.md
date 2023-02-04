@@ -33,7 +33,7 @@ What is the most common superpower for superheros with blond hair?
 ```
 
 ## Part E
-How many unique combinations of race and gender have no corresponding superheros?
+How many unique combinations of race and sex have no corresponding superheros?
 - **Answer:**
 ```sql
 
