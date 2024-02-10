@@ -5,28 +5,28 @@
 As usual, you have space to fill in both your answer and the accompanying SQL statement (between the triple backtick regions). If an answer necessitated more that just reading a number off your table, please provide a short description of how you found your answer.
 
 ## Part A
-How many married couples are represented in the data?
+What percentage of bad or evil superheros have red eyes?
 - **Answers:**
 ```sql
 
 ```
 
 ## Part B
-What names were duplicated throughout the family tree, where individuals were given the name name despite being different individuals?
+What is the average intelligence of human superheros?
 - **Answer:**
 ```sql
 
 ```
 
 ## Part C
-What was the greatest age difference between partners at the time of their wedding?
-- **Answers:**
+What is the most common superpower for superheros with blond hair?
+- **Answer:**
 ```sql
 
 ```
 
 ## Part D
-What is the youngest age at which someone became a grandparent?
+How many unique combinations of race and sex have no corresponding superheros?
 - **Answer:**
 ```sql
 

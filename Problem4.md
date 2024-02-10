@@ -1,39 +1,32 @@
-# Problem 2
+# Problem 4
 - Who did you work with?:
 - Estimated time spent on problem?:
 
 As usual, you have space to fill in both your answer and the accompanying SQL statement (between the triple backtick regions). If an answer necessitated more that just reading a number off your table, please provide a short description of how you found your answer.
 
 ## Part A
-What percentage of bad or evil superheros have red eyes?
+How many married couples are represented in the data?
 - **Answers:**
 ```sql
 
 ```
 
 ## Part B
-What is the average intelligence of human superheros?
+What names were duplicated throughout the family tree, where individuals were given the same name despite being different individuals?
 - **Answer:**
 ```sql
 
 ```
 
 ## Part C
-Who is the heaviest superhero that can fly?
+What was the greatest age difference between married partners? What were these partner's names?
 - **Answers:**
 ```sql
 
 ```
 
 ## Part D
-What is the most common superpower for superheros with blond hair?
-- **Answer:**
-```sql
-
-```
-
-## Part E
-How many unique combinations of race and sex have no corresponding superheros?
+What is the youngest age at which someone became a grandparent? Who became a grandparent at this age?
 - **Answer:**
 ```sql
 
