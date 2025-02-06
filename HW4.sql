@@ -67,7 +67,7 @@ INSERT INTO hw4.races VALUES
 (55,'Ungaran'), (56,'Vampire'), (57,'Xenomorph XX121'), (58,'Yautja'), (59,'Yodas species'), (60,'Zen-Whoberian'), (61,'Zombie');
 
 
-CREATE TABLE hw4.superheros (
+CREATE TABLE hw4.superheroes (
   id serial,
   superhero_name varchar(200),
   full_name varchar(200),
@@ -81,7 +81,7 @@ CREATE TABLE hw4.superheros (
   height_cm int,
   weight_kg int
 );
-INSERT INTO hw4.superheros VALUES 
+INSERT INTO hw4.superheroes VALUES 
 (1,'3-D Man','Charles Chandler',1,9,13,1,1,13,1,188,90),
 (2,'A-Bomb','Richard Milhouse Jones',1,33,1,1,24,13,1,203,441),
 (3,'Abe Sapien','Abraham Sapien',1,7,1,7,33,3,1,191,65),

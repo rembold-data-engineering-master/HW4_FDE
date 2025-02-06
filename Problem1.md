@@ -1,11 +1,12 @@
 # Problem 1
-- List any other students you worked with:
+- What other students did you work with (if any)?:
 - About how long did you work on this problem?
+- Generative AI transcript URL (if used):
 
 
-Simply enter in the command that you generated to make your prompt of choice in the code block below:
+Simply enter the command that you generated to make your prompt of choice in the code block below:
 ```bash
 PS1=
 ```
 
-**Don't forget to upload a screenshot showing your prompt in use!**
+**Don't forget to upload a screenshot directly to the repository showing your prompt in use!**
